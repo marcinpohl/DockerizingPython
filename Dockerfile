@@ -9,9 +9,6 @@ ENV PYTHONDONTWRITEBYTECODE "0"
 # Setup locale. This prevents Python 3 IO encoding issues.
 ENV PYTHONUTF8 "1"
 ENV PYTHONHASHSEED "random"
-# Make stdout/stderr unbuffered. This prevents delay between output and cloud.
-# Might not be needed by all apps, but slow ALL of them. test per app/container
-#ENV PYTHONUNBUFFERED "1"
 
 ############ OPENFAAS-COMPILE-IMAGE STAGE ###########
 
